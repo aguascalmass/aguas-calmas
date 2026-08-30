@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!-- =========================================
+         INFORMACIÓN DE LA PÁGINA
+         ========================================= -->
+
+    <title>Página no encontrada | Aguas Calmas</title>
+
+
+    <meta
+        name="description"
+        content="La página que buscas no se encuentra disponible en Aguas Calmas."
+    >
+
+
+    <meta
+        name="author"
+        content="Álvaro Leites"
+    >
+
+
+    <!--
+        Una página 404 no debe indexarse
+        como contenido independiente.
+    -->
+
+    <meta
+        name="robots"
+        content="noindex, follow"
+    >
+
+
+
+    <!-- =========================================
+         FAVICON
+         ========================================= -->
+
+    <link
+        rel="icon"
+        href="/aguas-calmas/imagenes/favicon.svg"
+        type="image/svg+xml"
+    >
+
+
+
+    <!-- =========================================
+         CSS GENERAL
+         ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="/aguas-calmas/css/estilos.css"
+    >
+
+
+
+    <!-- =========================================
+         ESTILOS EXCLUSIVOS DE LA PÁGINA 404
+         ========================================= -->
+
+    <style>
+
+        html,
+        body {
+
+            margin: 0;
+
+            min-height: 100%;
+
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+            background: #111;
+
+        }
+
+
+
+        /* =========================================
+           VIDEO DE FONDO
+           ========================================= */
+
+        .fondo-404 {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 0;
+
+            overflow: hidden;
+
+        }
+
+
+        .fondo-404 video {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .velo-404 {
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                rgba(0, 0, 0, 0.58);
+
+        }
+
+
+
+        /* =========================================
+           CABECERA
+           ========================================= */
+
+        .cabecera-404 {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+        }
+
+
+        .navegacion-404 {
+
+            width: calc(100% - 80px);
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 28px 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            box-sizing: border-box;
+
+        }
+
+
+        .logo-404 {
+
+            width: 58px;
+
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            border:
+                1px solid rgba(233, 217, 135, 0.85);
+
+            border-radius: 50%;
+
+            color: #e9d987;
+
+            font-family:
+                Georgia, "Times New Roman", serif;
+
+            font-size: 21px;
+
+            letter-spacing: 1px;
+
+            text-decoration: none;
+
+        }
+
+
+        .menu-404 {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: flex-end;
+
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+        }
+
+
+        .menu-404 a {
+
+            color: rgba(255, 255, 255, 0.88);
+
+            font-family:
+                Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.3px;
+
+            text-decoration: none;
+
+            text-transform: uppercase;
+
+            transition:
+                color 0.2s ease;
+
+        }
+
+
+        .menu-404 a:hover {
+
+            color: #e9d987;
+
+        }
+
+
+        .separador-404 {
+
+            width: 1px;
+
+            height: 12px;
+
+            background:
+                rgba(255, 255, 255, 0.3);
+
+        }
+
+
+
+        /* =========================================
+           CONTENIDO
+           ========================================= */
+
+        .contenedor-404 {
+
+            position: relative;
+
+            z-index: 2;
+
+            min-height:
+                calc(100vh - 190px);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            box-sizing: border-box;
+
+            padding:
+                70px
+                30px
+                100px;
+
+            text-align: center;
+
+        }
+
+
+        .contenido-404 {
+
+            width: 100%;
+
+            max-width: 760px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .numero-404 {
+
+            margin: 0;
+
+            color:
+                rgba(233, 217, 135, 0.95);
+
+            font-family:
+                Georgia, "Times New Roman", serif;
+
+            font-size:
+                clamp(105px, 19vw, 210px);
+
+            font-weight: normal;
+
+            line-height: 0.85;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .linea-404 {
+
+            width: 70px;
+
+            height: 1px;
+
+            margin:
+                38px
+                auto;
+
+            background: #e9d987;
+
+        }
+
+
+        .contenido-404 h1 {
+
+            margin:
+                0
+                0
+                20px;
+
+            color: #ffffff;
+
+            font-family:
+                Georgia, "Times New Roman", serif;
+
+            font-size:
+                clamp(30px, 5vw, 48px);
+
+            font-weight: normal;
+
+            line-height: 1.2;
+
+        }
+
+
+        .contenido-404 p {
+
+            max-width: 600px;
+
+            margin:
+                0
+                auto;
+
+            color:
+                rgba(255, 255, 255, 0.82);
+
+            font-family:
+                Georgia, "Times New Roman", serif;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+        }
+
+
+        .boton-inicio-404 {
+
+            display: inline-block;
+
+            margin-top: 38px;
+
+            padding:
+                14px
+                27px;
+
+            border:
+                1px solid
+                rgba(233, 217, 135, 0.85);
+
+            color: #e9d987;
+
+            font-family:
+                Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-decoration: none;
+
+            text-transform: uppercase;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease;
+
+        }
+
+
+        .boton-inicio-404:hover {
+
+            background: #e9d987;
+
+            color: #202020;
+
+        }
+
+
+
+        /* =========================================
+           PIE
+           ========================================= */
+
+        .pie-404 {
+
+            position: relative;
+
+            z-index: 2;
+
+            padding:
+                25px
+                20px
+                35px;
+
+            text-align: center;
+
+        }
+
+
+        .pie-404 p {
+
+            margin: 0;
+
+            color:
+                rgba(255, 255, 255, 0.55);
+
+            font-family:
+                Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+
+        @media (max-width: 850px) {
+
+            .navegacion-404 {
+
+                width:
+                    calc(100% - 36px);
+
+                padding:
+                    22px
+                    0;
+
+                flex-direction: column;
+
+                gap: 23px;
+
+            }
+
+
+            .menu-404 {
+
+                justify-content: center;
+
+            }
+
+
+            .contenedor-404 {
+
+                min-height:
+                    auto;
+
+                padding:
+                    85px
+                    22px
+                    110px;
+
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .menu-404 {
+
+                gap:
+                    8px
+                    10px;
+
+            }
+
+
+            .menu-404 a {
+
+                font-size: 9px;
+
+            }
+
+
+            .separador-404 {
+
+                display: none;
+
+            }
+
+
+            .contenido-404 p {
+
+                font-size: 16px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         VIDEO DE FONDO
+         ========================================= -->
+
+    <div class="fondo-404">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+
+            <source
+                src="/aguas-calmas/videos/fondo-aguas-calmas.mp4"
+                type="video/mp4"
+            >
+
+        </video>
+
+        <div class="velo-404"></div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         CABECERA
+         ========================================= -->
+
+    <header class="cabecera-404">
+
+        <div class="navegacion-404">
+
+
+            <a
+                href="/aguas-calmas/"
+                class="logo-404"
+                aria-label="Ir al inicio de Aguas Calmas"
+            >
+                AL
+            </a>
+
+
+            <nav class="menu-404">
+
+
+                <a href="/aguas-calmas/">
+                    INICIO
+                </a>
+
+
+                <span class="separador-404"></span>
+
+
+                <a href="/aguas-calmas/discos.html">
+                    DISCOS MUSICALES
+                </a>
+
+
+                <span class="separador-404"></span>
+
+
+                <a href="/aguas-calmas/partituras.html">
+                    PARTITURAS
+                </a>
+
+
+                <span class="separador-404"></span>
+
+
+                <a href="/aguas-calmas/reflexiones.html">
+                    REFLEXIONES
+                </a>
+
+
+                <span class="separador-404"></span>
+
+
+                <a href="/aguas-calmas/poemas.html">
+                    POEMAS
+                </a>
+
+
+                <span class="separador-404"></span>
+
+
+                <a href="/aguas-calmas/about.html">
+                    ABOUT ME
+                </a>
+
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         CONTENIDO
+         ========================================= -->
+
+    <main class="contenedor-404">
+
+
+        <div class="contenido-404">
+
+
+            <p class="numero-404">
+                404
+            </p>
+
+
+            <div class="linea-404"></div>
+
+
+            <h1>
+                Página no encontrada
+            </h1>
+
+
+            <p>
+
+                Parece que la página que buscas no existe,
+                fue trasladada o la dirección ingresada no es correcta.
+
+                Puedes regresar al inicio de Aguas Calmas
+                y continuar navegando desde allí.
+
+            </p>
+
+
+            <a
+                href="/aguas-calmas/"
+                class="boton-inicio-404"
+            >
+                Volver al inicio
+            </a>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         PIE
+         ========================================= -->
+
+    <footer class="pie-404">
+
+        <p>
+            © 2026 Aguas Calmas · Álvaro Leites
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

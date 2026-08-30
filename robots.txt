@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aguascalmass.github.io/aguas-calmas/sitemap.xml

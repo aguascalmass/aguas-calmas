@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/discos.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/partituras.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/reflexiones.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/poemas.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/about.html</loc>
+    </url>
+
+
+    <!-- DISCOS -->
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/discos/this-is-my-story-in-blues.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/discos/aguas-calmas.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/discos/morral-de-suenos.html</loc>
+    </url>
+
+
+    <!-- REFLEXIONES -->
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/de-socrates-a-byung-chul-han.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/tus-companeros-de-trabajo-no-son-tus-amigos.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/el-problema-del-tiempo.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/el-problema-de-la-verdad.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/que-es-el-amor.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/articulos/el-problema-de-la-desorganizacion.html</loc>
+    </url>
+
+
+    <!-- POEMAS -->
+
+    <url>
+        <loc>https://aguascalmass.github.io/aguas-calmas/poemas/tu-voz.html</loc>
+    </url>
+
+</urlset>
