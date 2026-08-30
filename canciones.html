@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canciones privadas | Aguas Calmas</title>
+<meta name="description" content="Área privada de canciones y proyectos personales de Aguas Calmas.">
+<meta name="author" content="Álvaro Leites">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+<style>
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body.canciones-privadas{margin:0;min-height:100vh;overflow-x:hidden;background:#111;color:#f2f2f2}
+.privado-video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.privado-capa{position:fixed;inset:0;z-index:-2;background:rgba(0,0,0,.52)}
+.privado-cabecera{position:relative;z-index:2;width:100%;padding:28px 34px}
+.privado-logo{display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;border:1px solid rgba(233,217,135,.8);border-radius:50%;color:#e9d987;text-decoration:none;font-family:Georgia,"Times New Roman",serif;font-size:27px;letter-spacing:2px;background:rgba(20,20,20,.38);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.privado-main{position:relative;z-index:1;min-height:calc(100vh - 175px);display:flex;align-items:center;justify-content:center;padding:30px 20px 70px}
+.acceso-panel,.archivo-panel{width:min(92vw,760px);padding:46px 42px 40px;border:1px solid rgba(233,217,135,.48);background:rgba(16,16,16,.60);box-shadow:0 18px 55px rgba(0,0,0,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.acceso-panel{max-width:520px;text-align:center}
+.acceso-linea{width:74px;height:1px;margin:0 auto 24px;background:rgba(233,217,135,.78)}
+.acceso-subtitulo,.archivo-subtitulo{margin:0 0 9px;color:#e9d987;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;letter-spacing:4px;text-transform:uppercase}
+.acceso-titulo,.archivo-titulo{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(36px,6vw,55px);font-weight:400;letter-spacing:1px;color:#fff}
+.acceso-descripcion{max-width:390px;margin:18px auto 32px;color:rgba(255,255,255,.78);font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.75}
+.campo-grupo{text-align:left}.campo-grupo label{display:block;margin-bottom:9px;color:rgba(255,255,255,.82);font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.campo-password{width:100%;height:50px;padding:0 15px;border:1px solid rgba(255,255,255,.25);outline:none;background:rgba(0,0,0,.34);color:#fff;font-size:17px;letter-spacing:1px}
+.campo-password:focus{border-color:rgba(233,217,135,.82)}
+.boton-entrar,.boton-cerrar{border:1px solid #e9d987;background:transparent;color:#e9d987;cursor:pointer;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase}
+.boton-entrar{width:100%;min-height:50px;margin-top:18px;font-size:12px;letter-spacing:3px}
+.boton-cerrar{min-height:38px;padding:0 18px;font-size:10px;letter-spacing:2px}
+.boton-entrar:hover,.boton-cerrar:hover{background:#e9d987;color:#1c1c1c}
+.estado-acceso{min-height:22px;margin:14px 0 0;color:rgba(255,255,255,.64);font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5}
+.estado-acceso.error{color:#ffd0d0}
+.volver-inicio{display:inline-block;margin-top:20px;color:rgba(255,255,255,.68);font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1.5px;text-decoration:none;text-transform:uppercase}
+.volver-inicio:hover{color:#e9d987}
+.archivo-panel[hidden],.acceso-panel[hidden]{display:none}
+.archivo-cabecera{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:1px solid rgba(233,217,135,.28)}
+.archivo-proyectos{padding-top:6px}
+.proyecto{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.proyecto:last-child{border-bottom:0;padding-bottom:0}
+.proyecto h2{margin:0 0 18px;color:#e9d987;font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:400}
+.pista{padding:16px 0 20px;border-top:1px solid rgba(255,255,255,.08)}
+.pista:first-of-type{border-top:0}
+.pista-titulo{margin:0 0 10px;color:rgba(255,255,255,.92);font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400}
+.pista-estado{min-height:18px;margin:8px 0 0;color:rgba(255,255,255,.52);font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5}
+.reproductor-privado{display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:13px;width:100%;min-height:52px;padding:0 14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06)}
+.reproductor-play{width:38px;height:38px;padding:0;border:1px solid rgba(233,217,135,.70);border-radius:50%;background:transparent;color:#e9d987;cursor:pointer;font-size:16px}
+.reproductor-play:hover{background:#e9d987;color:#171717}
+.reproductor-progreso{width:100%;accent-color:#e9d987;cursor:pointer}
+.reproductor-tiempo{min-width:82px;color:rgba(255,255,255,.72);font-family:Arial,Helvetica,sans-serif;font-size:11px;font-variant-numeric:tabular-nums;text-align:right}
+.privado-pie{position:relative;z-index:1;padding:20px;text-align:center;color:rgba(255,255,255,.55);font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1px}
+@media(max-width:700px){.privado-cabecera{padding:20px;text-align:center}.privado-logo{width:62px;height:62px;font-size:23px}.privado-main{padding:20px 16px 50px}.acceso-panel,.archivo-panel{padding:36px 22px 30px}.archivo-cabecera{flex-direction:column}.boton-cerrar{width:100%}.reproductor-privado{grid-template-columns:44px 1fr;gap:10px;padding:8px 10px}.reproductor-tiempo{grid-column:2;min-width:0;text-align:left}}
+</style>
+</head>
+<body class="canciones-privadas">
+<video class="privado-video" autoplay muted loop playsinline>
+<source src="videos/fondo-aguas-calmas.mp4" type="video/mp4">
+</video>
+<div class="privado-capa"></div>
+<header class="privado-cabecera"><a href="index.html" class="privado-logo" aria-label="Volver a Aguas Calmas">AL</a></header>
+<main class="privado-main">
+<section id="panel-acceso" class="acceso-panel" aria-labelledby="titulo-canciones">
+<div class="acceso-linea"></div>
+<p class="acceso-subtitulo">Archivo privado</p>
+<h1 id="titulo-canciones" class="acceso-titulo">Canciones</h1>
+<p class="acceso-descripcion">Área reservada para canciones, maquetas y proyectos musicales personales.</p>
+<form id="formulario-acceso" autocomplete="off">
+<div class="campo-grupo">
+<label for="clave-acceso">Contraseña de acceso</label>
+<input id="clave-acceso" class="campo-password" type="password" autocomplete="current-password" required aria-describedby="estado-acceso">
+</div>
+<button id="boton-entrar" class="boton-entrar" type="submit">Entrar</button>
+<p id="estado-acceso" class="estado-acceso" aria-live="polite"></p>
+</form>
+<a href="index.html" class="volver-inicio">Volver a Aguas Calmas</a>
+</section>
+<section id="panel-archivo" class="archivo-panel" hidden aria-labelledby="titulo-archivo">
+<div class="archivo-cabecera">
+<div><p class="archivo-subtitulo">Archivo privado</p><h1 id="titulo-archivo" class="archivo-titulo">Canciones</h1></div>
+<button id="boton-cerrar" class="boton-cerrar" type="button">Cerrar sesión</button>
+</div>
+<div id="archivo-proyectos" class="archivo-proyectos"></div>
+</section>
+</main>
+<footer class="privado-pie">© 2026 Aguas Calmas · Álvaro Leites</footer>
+<script src="js/canciones-privadas.js"></script>
+</body>
+</html>
