@@ -1,0 +1,777 @@
+/* =========================================================
+   AGUAS CALMAS
+   PÁGINA INDIVIDUAL DE DISCO
+   ========================================================= */
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+body.pagina-disco-detalle {
+    margin: 0;
+    min-height: 100vh;
+    background: transparent;
+    color: #242424;
+}
+
+
+/* =========================================================
+   VIDEO DE FONDO
+   ========================================================= */
+
+.fondo-video-disco {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+.fondo-video-disco video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.velo-disco {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   CABECERA
+   ========================================================= */
+
+.cabecera-disco {
+    position: relative;
+    z-index: 20;
+
+    height: 62px;
+    margin-top: 35px;
+
+    background: rgba(10, 10, 10, 0.63);
+}
+
+
+.navegacion-disco {
+    width: 100%;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo-disco {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 55px;
+
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: 50%;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.menu-disco {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-disco a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 0.3px;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.menu-disco a:hover,
+.menu-disco a.activo {
+    color: #e9d987;
+}
+
+
+.separador-disco {
+    width: 1px;
+    height: 29px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background: rgba(255, 255, 255, 0.52);
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.contenedor-disco {
+    position: relative;
+    z-index: 10;
+
+    width: calc(100% - 60px);
+    max-width: 1100px;
+
+    margin: 45px auto 55px;
+}
+
+
+/* =========================================================
+   PANEL DEL ÁLBUM
+   ========================================================= */
+
+.album-detalle {
+    background: rgba(242, 242, 239, 0.94);
+
+    padding: 70px 75px 80px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+
+/* =========================================================
+   CABECERA DEL ÁLBUM
+   ========================================================= */
+
+.album-presentacion {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+
+/* =========================================================
+   PORTADA PROVISIONAL
+   ========================================================= */
+
+.portada-provisional {
+    aspect-ratio: 1 / 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 15, 15, 0.96),
+            rgba(51, 51, 51, 0.93)
+        );
+
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.28);
+
+    text-align: center;
+}
+
+
+.portada-provisional .titulo-portada {
+    margin: 0 0 16px;
+
+    color: #eeeeee;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+
+    line-height: 1.25;
+}
+
+
+.portada-provisional .autor-portada {
+    margin: 0 0 40px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.portada-provisional .estado-portada {
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL DISCO
+   ========================================================= */
+
+.album-informacion .tipo-album {
+    margin-bottom: 13px;
+
+    color: #7c6c27;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.album-informacion h1 {
+    margin: 0 0 12px;
+
+    color: #222222;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: normal;
+
+    line-height: 1.1;
+}
+
+
+.album-artista {
+    margin: 0 0 18px;
+
+    color: #535353;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+}
+
+
+.album-datos {
+    margin: 0 0 28px;
+
+    color: #777777;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+
+.linea-album {
+    width: 75px;
+    height: 1px;
+
+    margin-bottom: 27px;
+
+    background: #8b7b39;
+}
+
+
+.descripcion-album {
+    margin: 0;
+
+    color: #444444;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   TRACKLIST
+   ========================================================= */
+
+.seccion-canciones {
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+
+    padding-top: 52px;
+}
+
+
+.seccion-canciones h2 {
+    margin: 0 0 8px;
+
+    color: #262626;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+
+.subtitulo-canciones {
+    margin: 0 0 38px;
+
+    color: #777777;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   CANCIÓN
+   ========================================================= */
+
+.cancion {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+
+    padding: 23px 0;
+}
+
+
+.cancion:last-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+.cancion-superior {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr) 55px 125px;
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+
+.numero-cancion {
+    color: #999999;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+.nombre-cancion {
+    color: #242424;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+}
+
+
+.duracion-cancion {
+    color: #777777;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   BOTÓN ESCUCHAR
+   ========================================================= */
+
+.boton-reproducir {
+    min-width: 125px;
+
+    padding: 11px 15px;
+
+    border: 1px solid #393939;
+
+    background: transparent;
+
+    color: #292929;
+
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.boton-reproducir:hover,
+.boton-reproducir.reproduciendo {
+    background: #292929;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   PROGRESO
+   ========================================================= */
+
+.reproductor-progreso {
+    display: none;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 18px;
+    margin-left: 63px;
+}
+
+
+.cancion.activa .reproductor-progreso {
+    display: flex;
+}
+
+
+.tiempo-actual,
+.tiempo-total {
+    min-width: 35px;
+
+    color: #777777;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+
+.barra-progreso {
+    flex: 1;
+
+    height: 4px;
+
+    appearance: none;
+
+    background: rgba(0, 0, 0, 0.18);
+
+    cursor: pointer;
+}
+
+
+.barra-progreso::-webkit-slider-thumb {
+    width: 11px;
+    height: 11px;
+
+    appearance: none;
+
+    border-radius: 50%;
+
+    background: #292929;
+
+    cursor: pointer;
+}
+
+
+.barra-progreso::-moz-range-thumb {
+    width: 11px;
+    height: 11px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #292929;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ÁLBUM EN PRODUCCIÓN
+   ========================================================= */
+
+.album-produccion {
+    margin-top: 55px;
+
+    padding: 30px 34px;
+
+    border-left: 3px solid #958444;
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+
+.album-produccion strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333333;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+
+.album-produccion p {
+    margin: 0;
+
+    color: #595959;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   NOTA DE REPRODUCCIÓN
+   ========================================================= */
+
+.nota-audio {
+    margin-top: 25px;
+
+    color: #8a8a8a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   VOLVER
+   ========================================================= */
+
+.volver-discografia {
+    margin-top: 55px;
+}
+
+
+.volver-discografia a {
+    color: #51471f;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.volver-discografia a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PIE
+   ========================================================= */
+
+.pie-disco {
+    position: relative;
+    z-index: 10;
+
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(10, 10, 10, 0.64);
+}
+
+
+.contenido-pie-disco {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.logo-pie-disco {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+}
+
+
+.contenido-pie-disco p {
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .album-detalle {
+        padding: 45px 32px 55px;
+    }
+
+
+    .album-presentacion {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .portada-provisional {
+        max-width: 420px;
+
+        margin: 0 auto;
+    }
+
+
+    .album-informacion h1 {
+        font-size: 40px;
+    }
+
+
+    .cancion-superior {
+        grid-template-columns: 35px 1fr 45px;
+    }
+
+
+    .boton-reproducir {
+        grid-column: 2 / 4;
+
+        justify-self: start;
+
+        margin-top: 5px;
+    }
+
+
+    .reproductor-progreso {
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .cabecera-disco {
+        height: auto;
+
+        padding: 15px 20px;
+    }
+
+
+    .navegacion-disco {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .logo-disco {
+        margin-right: 0;
+    }
+
+
+    .menu-disco {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 14px;
+    }
+
+
+    .separador-disco {
+        display: none;
+    }
+
+
+    .contenedor-disco {
+        width: calc(100% - 28px);
+
+        margin-top: 25px;
+    }
+
+
+    .album-detalle {
+        padding: 35px 22px 45px;
+    }
+
+
+    .album-informacion h1 {
+        font-size: 34px;
+    }
+
+
+    .descripcion-album {
+        font-size: 16px;
+    }
+
+}

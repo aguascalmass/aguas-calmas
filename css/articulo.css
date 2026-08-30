@@ -1,0 +1,834 @@
+/* ==========================================================
+   AGUAS CALMAS
+   ARTÍCULOS DE REFLEXIONES
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO
+   ========================================================== */
+
+body.pagina-articulo {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+    color: #333333;
+
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.fondo-video-articulo {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.fondo-video-articulo video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   VELO
+   ========================================================== */
+
+.velo-articulo {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ==========================================================
+   CABECERA
+   MISMO TAMAÑO DEL RESTO DEL SITIO
+   ========================================================== */
+
+.cabecera-articulo {
+
+    position: relative;
+
+    z-index: 20;
+
+    margin-top: 35px;
+
+    width: 100%;
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+
+.navegacion-articulo {
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.logo-articulo {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+}
+
+
+/* ==========================================================
+   MENÚ
+   ========================================================== */
+
+.menu-articulo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+.menu-articulo a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.menu-articulo a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+.menu-articulo a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES
+   ========================================================== */
+
+.separador-articulo {
+
+    display: block;
+
+    width: 1px;
+    height: 29px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================== */
+
+.contenedor-articulo {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin:
+        45px
+        auto
+        55px;
+
+}
+
+
+/* ==========================================================
+   HOJA DEL ARTÍCULO
+   ========================================================== */
+
+.articulo {
+
+    width: 100%;
+
+    padding:
+        75px
+        90px
+        85px;
+
+    background-color: rgba(245, 245, 245, 0.94);
+
+    box-shadow:
+        0 5px 28px rgba(0, 0, 0, 0.30);
+
+}
+
+
+/* ==========================================================
+   CABECERA DEL TEXTO
+   ========================================================== */
+
+.cabecera-texto-articulo {
+
+    margin-bottom: 70px;
+
+    text-align: center;
+
+}
+
+
+/* CATEGORÍA */
+
+.categoria-articulo {
+
+    margin-bottom: 22px;
+
+    color: #888888;
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+/* TÍTULO */
+
+.cabecera-texto-articulo h1 {
+
+    margin-bottom: 20px;
+
+    color: #292929;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+    line-height: 1.12;
+
+}
+
+
+/* SUBTÍTULO */
+
+.cabecera-texto-articulo h2 {
+
+    max-width: 720px;
+
+    margin:
+        0
+        auto
+        28px;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.45;
+
+}
+
+
+/* LÍNEA */
+
+.linea-articulo {
+
+    width: 130px;
+    height: 1px;
+
+    margin:
+        0
+        auto
+        30px;
+
+    background-color: #777777;
+
+}
+
+
+/* BAJADA */
+
+.bajada-articulo {
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   SECCIONES DEL ARTÍCULO
+   ========================================================== */
+
+.articulo section {
+
+    margin-bottom: 58px;
+
+}
+
+
+/* ==========================================================
+   SUBTÍTULOS
+   ========================================================== */
+
+.articulo section h3 {
+
+    margin-bottom: 24px;
+
+    color: #303030;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    line-height: 1.35;
+
+}
+
+
+/* ==========================================================
+   PÁRRAFOS
+   ========================================================== */
+
+.articulo section p {
+
+    margin-bottom: 20px;
+
+    color: #444444;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+}
+
+
+/* ==========================================================
+   PREGUNTA FINAL
+   ========================================================== */
+
+.articulo .pregunta-final {
+
+    margin:
+        35px
+        0;
+
+    padding:
+        28px
+        35px;
+
+    border-left: 3px solid #888888;
+
+    background-color: rgba(220, 220, 220, 0.40);
+
+    color: #333333;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    text-align: left;
+
+}
+
+
+/* ==========================================================
+   BIBLIOGRAFÍA
+   ========================================================== */
+
+.bibliografia-articulo {
+
+    margin-top: 80px;
+
+    padding-top: 55px;
+
+    border-top: 1px solid #bdbdbd;
+
+}
+
+
+.bibliografia-articulo h3 {
+
+    font-size: 32px !important;
+
+}
+
+
+.bibliografia-articulo h4 {
+
+    margin:
+        35px
+        0
+        18px;
+
+    color: #444444;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+.bibliografia-articulo ul {
+
+    padding-left: 25px;
+
+}
+
+
+.bibliografia-articulo li {
+
+    margin-bottom: 9px;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+}
+
+
+/* ==========================================================
+   VOLVER
+   ========================================================== */
+
+.volver-reflexiones {
+
+    margin-top: 70px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #bdbdbd;
+
+    text-align: center;
+
+}
+
+
+.volver-reflexiones a {
+
+    color: #555555;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+.volver-reflexiones a:hover {
+
+    opacity: 0.55;
+
+}
+
+
+/* ==========================================================
+   PIE DE PÁGINA
+   ========================================================== */
+
+.pie-articulo {
+
+    position: relative;
+
+    z-index: 20;
+
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+.contenido-pie-articulo {
+
+    width: 792px;
+
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+}
+
+
+.contenido-pie-articulo p {
+
+    color: #dddddd;
+
+    font-size: 10px;
+
+}
+
+
+/* LOGO DEL PIE */
+
+.marca-pie-articulo {
+
+    width: 50px;
+
+    text-align: center;
+
+}
+
+
+.logo-pie-articulo {
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.ovalo-pie-articulo {
+
+    width: 46px;
+    height: 9px;
+
+    margin-top: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 50%;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+
+    .logo-articulo {
+
+        margin-right: 28px;
+
+    }
+
+
+    .separador-articulo {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .menu-articulo a {
+
+        font-size: 10px;
+
+    }
+
+
+    .contenedor-articulo {
+
+        width: 92%;
+
+    }
+
+
+    .articulo {
+
+        padding:
+            65px
+            60px
+            75px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .cabecera-articulo {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .navegacion-articulo {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .logo-articulo {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .menu-articulo {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .separador-articulo {
+
+        display: none;
+
+    }
+
+
+    .articulo {
+
+        padding:
+            45px
+            28px
+            55px;
+
+    }
+
+
+    .cabecera-texto-articulo h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .cabecera-texto-articulo h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .articulo section h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .articulo section p {
+
+        font-size: 16px;
+
+        text-align: left;
+
+    }
+
+
+    .articulo .pregunta-final {
+
+        padding:
+            22px
+            24px;
+
+        font-size: 18px;
+
+    }
+
+}

@@ -1,0 +1,410 @@
+/* ==========================================================
+   AGUAS CALMAS
+   DISCOS MUSICALES
+
+   Este archivo afecta solamente a discos.html
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO DE LA PÁGINA
+   ========================================================== */
+
+body.pagina-discos {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR DEL VIDEO
+   ========================================================== */
+
+.fondo-video-discos {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.fondo-video-discos video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   CAPA SUAVE SOBRE EL VIDEO
+   ========================================================== */
+
+.velo-discos {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   CABECERA DE DISCOS
+
+   MISMAS DIMENSIONES QUE LA CABECERA DE INICIO
+   ========================================================== */
+
+.pagina-discos .cabecera-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR DE NAVEGACIÓN
+
+   IGUAL AL DE INICIO
+   ========================================================== */
+
+.pagina-discos .navegacion-interior {
+
+    width: 100%;
+
+    max-width: none;
+
+    height: 62px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO AL
+
+   MISMO TAMAÑO QUE EN INICIO
+   ========================================================== */
+
+.pagina-discos .logo-circular-interior {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   MENÚ DE DISCOS
+
+   MISMA ESCALA QUE EN INICIO
+   ========================================================== */
+
+.pagina-discos .menu-interior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   TEXTOS DEL MENÚ
+
+   MISMO TAMAÑO QUE EN INICIO
+   ========================================================== */
+
+.pagina-discos .menu-interior a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 0;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.pagina-discos .menu-interior a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+/* DISCOS MUSICALES ACTIVO */
+
+.pagina-discos .menu-interior a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES VERTICALES
+
+   MISMAS MEDIDAS QUE EN INICIO
+   ========================================================== */
+
+.pagina-discos .separador-interior {
+
+    display: block;
+
+    width: 1px;
+
+    height: 29px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+
+.pagina-discos .contenido-discos {
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 45px;
+
+    margin-bottom: 55px;
+
+    padding-top: 65px;
+
+    padding-bottom: 100px;
+
+    background-color: rgba(238, 238, 238, 0.91);
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   PIE DE PÁGINA
+   ========================================================== */
+
+.pagina-discos .pie-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+    .pagina-discos .logo-circular-interior {
+
+        margin-right: 28px;
+
+    }
+
+
+    .pagina-discos .separador-interior {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .pagina-discos .menu-interior a {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .pagina-discos .cabecera-interior {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .pagina-discos .navegacion-interior {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .pagina-discos .logo-circular-interior {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .pagina-discos .menu-interior {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .pagina-discos .separador-interior {
+
+        display: none;
+
+    }
+
+}
+/* ==========================================================
+   DISCOS - ORDEN DE PORTADAS EN TELÉFONOS
+   ========================================================== */
+
+@media (max-width: 750px) {
+
+    .proyecto-musical .imagen-proyecto {
+        order: 1;
+    }
+
+    .proyecto-musical .texto-proyecto {
+        order: 2;
+    }
+
+}

@@ -1,0 +1,552 @@
+/* ==========================================================
+   AGUAS CALMAS
+   PARTITURAS
+
+   Este archivo afecta solamente a partituras.html
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO
+   ========================================================== */
+
+body.pagina-partituras {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+}
+
+
+/* ==========================================================
+   VIDEO
+   ========================================================== */
+
+.fondo-video-partituras {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.fondo-video-partituras video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   VELO
+   ========================================================== */
+
+.velo-partituras {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   CABECERA
+
+   MISMAS MEDIDAS QUE INICIO Y DISCOS
+   ========================================================== */
+
+.pagina-partituras .cabecera-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+
+.pagina-partituras .navegacion-interior {
+
+    width: 100%;
+
+    max-width: none;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO AL
+   ========================================================== */
+
+.pagina-partituras .logo-circular-interior {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   MENÚ
+   ========================================================== */
+
+.pagina-partituras .menu-interior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+.pagina-partituras .menu-interior a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.pagina-partituras .menu-interior a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+.pagina-partituras .menu-interior a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES
+   ========================================================== */
+
+.pagina-partituras .separador-interior {
+
+    display: block;
+
+    width: 1px;
+
+    height: 29px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+
+.contenido-partituras {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    min-height: 650px;
+
+    margin:
+        45px
+        auto
+        55px;
+
+    padding:
+        65px
+        55px
+        90px;
+
+    background-color: rgba(238, 238, 238, 0.91);
+
+    color: #333333;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   TÍTULO
+   ========================================================== */
+
+.titulo-partituras {
+
+    text-align: center;
+
+    margin-bottom: 65px;
+
+}
+
+
+.titulo-partituras h1 {
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+}
+
+
+/* LÍNEA */
+
+.linea-partituras {
+
+    width: 120px;
+
+    height: 1px;
+
+    margin:
+        22px
+        auto
+        28px;
+
+    background-color: #777777;
+
+}
+
+
+/* INTRODUCCIÓN */
+
+.introduccion-partituras {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   BIBLIOTECA
+   ========================================================== */
+
+.biblioteca-partituras {
+
+    width: 100%;
+
+    min-height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-top: 1px solid #cccccc;
+
+    border-bottom: 1px solid #cccccc;
+
+}
+
+
+/* ==========================================================
+   MENSAJE CENTRAL
+   ========================================================== */
+
+.mensaje-partituras {
+
+    max-width: 650px;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+}
+
+
+.mensaje-partituras h2 {
+
+    margin-bottom: 20px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+}
+
+
+.mensaje-partituras p {
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   PIE
+   ========================================================== */
+
+.pagina-partituras .pie-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+
+    .pagina-partituras .logo-circular-interior {
+
+        margin-right: 28px;
+
+    }
+
+
+    .pagina-partituras .separador-interior {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .pagina-partituras .menu-interior a {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .pagina-partituras .cabecera-interior {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .pagina-partituras .navegacion-interior {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .pagina-partituras .logo-circular-interior {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .pagina-partituras .menu-interior {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .pagina-partituras .separador-interior {
+
+        display: none;
+
+    }
+
+
+    .contenido-partituras {
+
+        width: 92%;
+
+        padding:
+            45px
+            25px
+            65px;
+
+    }
+
+
+    .titulo-partituras h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+/* ==========================================================
+   PARTITURAS - ADAPTACIÓN PARA TELÉFONOS
+   ========================================================== */
+
+@media (max-width: 750px) {
+
+    .biblioteca-partituras > div {
+        grid-template-columns: 1fr !important;
+
+        gap: 20px !important;
+    }
+
+
+    .biblioteca-partituras article {
+        min-height: auto !important;
+
+        padding: 28px 22px !important;
+    }
+
+}

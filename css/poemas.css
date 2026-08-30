@@ -1,0 +1,673 @@
+/* ==========================================================
+   AGUAS CALMAS
+   POEMAS
+
+   Este archivo afecta solamente a poemas.html
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO
+   ========================================================== */
+
+body.pagina-poemas {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.fondo-video-poemas {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.fondo-video-poemas video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   VELO
+   ========================================================== */
+
+.velo-poemas {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   CABECERA
+   MISMA ESCALA QUE TODO EL SITIO
+   ========================================================== */
+
+.pagina-poemas .cabecera-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+
+.pagina-poemas .navegacion-interior {
+
+    width: 100%;
+
+    max-width: none;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.pagina-poemas .logo-circular-interior {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   MENÚ
+   ========================================================== */
+
+.pagina-poemas .menu-interior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+.pagina-poemas .menu-interior a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.pagina-poemas .menu-interior a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+.pagina-poemas .menu-interior a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES
+   ========================================================== */
+
+.pagina-poemas .separador-interior {
+
+    display: block;
+
+    width: 1px;
+
+    height: 29px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+
+.contenido-poemas {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin:
+        45px
+        auto
+        55px;
+
+    padding:
+        65px
+        55px
+        90px;
+
+    background-color: rgba(238, 238, 238, 0.91);
+
+    color: #333333;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+   ========================================================== */
+
+.titulo-poemas {
+
+    margin-bottom: 65px;
+
+    text-align: center;
+
+}
+
+
+.titulo-poemas h1 {
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+}
+
+
+.linea-poemas {
+
+    width: 120px;
+
+    height: 1px;
+
+    margin:
+        22px
+        auto
+        28px;
+
+    background-color: #777777;
+
+}
+
+
+.introduccion-poemas {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   LISTA DE POEMAS
+   ========================================================== */
+
+.lista-poemas {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 32px;
+
+}
+
+
+/* ==========================================================
+   TARJETAS DE POEMAS
+   ========================================================== */
+
+.tarjeta-poema {
+
+    min-height: 320px;
+
+    padding:
+        38px
+        35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.74);
+
+    border:
+        1px
+        solid
+        rgba(120, 120, 120, 0.22);
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.tarjeta-poema:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.14);
+
+}
+
+
+/* ==========================================================
+   NÚMERO ROMANO
+   ========================================================== */
+
+.numero-poema {
+
+    margin-bottom: 22px;
+
+    color: #999999;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ==========================================================
+   TÍTULO
+   ========================================================== */
+
+.tarjeta-poema h2 {
+
+    margin-bottom: 25px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 29px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   FRAGMENTO DEL POEMA
+   ========================================================== */
+
+.fragmento-poema {
+
+    margin-bottom: 30px;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   PIE DE TARJETA
+   ========================================================== */
+
+.pie-poema {
+
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top:
+        1px
+        solid
+        rgba(120, 120, 120, 0.25);
+
+}
+
+
+.pie-poema span {
+
+    color: #888888;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ==========================================================
+   PIE DEL SITIO
+   ========================================================== */
+
+.pagina-poemas .pie-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+
+    .pagina-poemas .logo-circular-interior {
+
+        margin-right: 28px;
+
+    }
+
+
+    .pagina-poemas .separador-interior {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .pagina-poemas .menu-interior a {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .pagina-poemas .cabecera-interior {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .pagina-poemas .navegacion-interior {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .pagina-poemas .logo-circular-interior {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .pagina-poemas .menu-interior {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .pagina-poemas .separador-interior {
+
+        display: none;
+
+    }
+
+
+    .contenido-poemas {
+
+        width: 92%;
+
+        padding:
+            45px
+            25px
+            65px;
+
+    }
+
+
+    .titulo-poemas h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .lista-poemas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tarjeta-poema h2 {
+
+        font-size: 26px;
+
+    }
+
+}
+/* ==========================================================
+   POEMAS - ADAPTACIÓN PARA TELÉFONOS
+   ========================================================== */
+
+@media (max-width: 750px) {
+
+    /* TARJETA PRINCIPAL DE POEMAS */
+
+    .tarjeta-poema {
+        width: 100% !important;
+
+        padding:
+            35px
+            22px !important;
+    }
+
+
+    .fragmento-poema {
+        font-size: 15px;
+
+        line-height: 1.75 !important;
+    }
+
+
+    .titulo-poemas {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .introduccion-poemas {
+        max-width: 100%;
+    }
+
+}

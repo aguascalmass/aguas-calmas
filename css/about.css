@@ -1,0 +1,805 @@
+/* ==========================================================
+   AGUAS CALMAS
+   ABOUT ME
+
+   Este archivo afecta solamente a about.html
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO
+   ========================================================== */
+
+body.pagina-about {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.fondo-video-about {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.fondo-video-about video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   VELO SOBRE EL VIDEO
+   ========================================================== */
+
+.velo-about {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   CABECERA
+   MISMAS DIMENSIONES QUE TODO EL SITIO
+   ========================================================== */
+
+.pagina-about .cabecera-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+
+.pagina-about .navegacion-interior {
+
+    width: 100%;
+
+    max-width: none;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.pagina-about .logo-circular-interior {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   MENÚ
+   ========================================================== */
+
+.pagina-about .menu-interior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+.pagina-about .menu-interior a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.pagina-about .menu-interior a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+.pagina-about .menu-interior a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES
+   ========================================================== */
+
+.pagina-about .separador-interior {
+
+    display: block;
+
+    width: 1px;
+
+    height: 29px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+
+.contenido-about {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin:
+        45px
+        auto
+        55px;
+
+    padding:
+        65px
+        60px
+        90px;
+
+    background-color: rgba(238, 238, 238, 0.91);
+
+    color: #333333;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   TÍTULO
+   ========================================================== */
+
+.titulo-about {
+
+    margin-bottom: 65px;
+
+    text-align: center;
+
+}
+
+
+.titulo-about h1 {
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+}
+
+
+.linea-about {
+
+    width: 120px;
+
+    height: 1px;
+
+    margin:
+        22px
+        auto
+        28px;
+
+    background-color: #777777;
+
+}
+
+
+.frase-about {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   PRESENTACIÓN
+   ========================================================== */
+
+.presentacion-about {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        340px
+        1fr;
+
+    gap: 65px;
+
+    align-items: start;
+
+}
+
+
+/* ==========================================================
+   FOTOGRAFÍA
+   ========================================================== */
+
+.columna-foto {
+
+    width: 100%;
+
+}
+
+
+.foto-about {
+
+    width: 100%;
+
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #d8d8d8;
+
+    border: 1px solid #bdbdbd;
+
+    color: #777777;
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================================
+   TEXTO BIOGRÁFICO
+   ========================================================== */
+
+.columna-texto h2 {
+
+    margin-bottom: 28px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+}
+
+
+.columna-texto p {
+
+    margin-bottom: 20px;
+
+    color: #4c4c4c;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    text-align: justify;
+
+}
+
+
+/* ==========================================================
+   ÁREAS PRINCIPALES
+   ========================================================== */
+
+.areas-about {
+
+    width: 100%;
+
+    margin-top: 85px;
+
+    padding-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 32px;
+
+    border-top: 1px solid #c4c4c4;
+
+}
+
+
+/* ==========================================================
+   ÁREA
+   ========================================================== */
+
+.area-about {
+
+    padding:
+        30px
+        25px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.50);
+
+    border:
+        1px
+        solid
+        rgba(120, 120, 120, 0.18);
+
+}
+
+
+.numero-area {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #999999;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.area-about h3 {
+
+    margin-bottom: 18px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+}
+
+
+.area-about p {
+
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   CIERRE
+   ========================================================== */
+
+.cierre-about {
+
+    margin-top: 80px;
+
+    text-align: center;
+
+}
+
+
+.linea-cierre {
+
+    width: 70%;
+
+    height: 1px;
+
+    margin:
+        0
+        auto
+        45px;
+
+    background-color: #c4c4c4;
+
+}
+
+
+.cierre-about blockquote {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #444444;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+
+}
+
+
+.cierre-about p {
+
+    margin-top: 18px;
+
+    color: #888888;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================================
+   PIE
+   ========================================================== */
+
+.pagina-about .pie-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+
+    .pagina-about .logo-circular-interior {
+
+        margin-right: 28px;
+
+    }
+
+
+    .pagina-about .separador-interior {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .pagina-about .menu-interior a {
+
+        font-size: 10px;
+
+    }
+
+
+    .presentacion-about {
+
+        grid-template-columns:
+            280px
+            1fr;
+
+        gap: 40px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .pagina-about .cabecera-interior {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .pagina-about .navegacion-interior {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .pagina-about .logo-circular-interior {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .pagina-about .menu-interior {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .pagina-about .separador-interior {
+
+        display: none;
+
+    }
+
+
+    .contenido-about {
+
+        width: 92%;
+
+        padding:
+            45px
+            25px
+            65px;
+
+    }
+
+
+    .titulo-about h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .presentacion-about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .foto-about {
+
+        max-width: 340px;
+
+        height: 410px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .columna-texto h2 {
+
+        text-align: center;
+
+    }
+
+
+    .areas-about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ==========================================================
+   ABOUT ME - ADAPTACIÓN PARA TELÉFONOS
+   ========================================================== */
+
+@media (max-width: 750px) {
+
+    /* PRESENTACIÓN: FOTO ARRIBA, TEXTO DEBAJO */
+
+    .presentacion-about {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+
+    .columna-foto {
+        width: 100%;
+        max-width: 300px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .columna-texto {
+        width: 100%;
+    }
+
+
+    /* EDUCATION: FECHA ARRIBA, INFORMACIÓN DEBAJO */
+
+    .contenido-about
+    section[style*="margin-top: 75px"]
+    > div[style*="display: grid"] {
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}

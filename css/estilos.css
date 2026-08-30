@@ -1,0 +1,910 @@
+/* ==========================================================
+   AGUAS CALMAS
+   ESTILOS PRINCIPALES
+   ========================================================== */
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==========================================================
+   INICIO
+   ========================================================== */
+
+body.inicio {
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.video-fondo {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+    object-position: center center;
+
+    z-index: -10;
+}
+
+
+/* ==========================================================
+   CAPA SOBRE VIDEO
+   ========================================================== */
+
+.capa-video {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    z-index: -9;
+}
+
+
+/* ==========================================================
+   CABECERA INICIO
+   ========================================================== */
+
+.cabecera-inicio {
+    position: fixed;
+
+    top: 35px;
+    left: 0;
+
+    width: 100%;
+    height: 62px;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+    z-index: 20;
+}
+
+
+.navegacion-inicio {
+    width: 100%;
+    height: 62px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==========================================================
+   LOGO INICIO
+   ========================================================== */
+
+.logo-circular {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+}
+
+
+/* ==========================================================
+   MENÚ INICIO
+   ========================================================== */
+
+.menu-inicio {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+}
+
+
+.menu-inicio a {
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.menu-inicio a:hover {
+    opacity: 0.70;
+}
+
+
+.menu-inicio a.activo {
+    color: #e9d987;
+}
+
+
+.separador {
+    display: block;
+
+    width: 1px;
+    height: 29px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ==========================================================
+   PORTADA INICIO
+   ========================================================== */
+
+.portada-inicio {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.bloque-central {
+    position: absolute;
+
+    top: 146px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 660px;
+
+    max-width: 82vw;
+
+    text-align: center;
+}
+
+
+.linea-decorativa {
+    width: 100%;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+
+.linea-inferior {
+    margin-top: 17px;
+}
+
+
+.bloque-central h1 {
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 75px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.28);
+}
+
+
+.frase-portada {
+    width: 100%;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    font-style: italic;
+
+    line-height: 1.18;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ==========================================================
+   PIE INICIO
+   ========================================================== */
+
+.pie-inicio {
+    position: fixed;
+
+    left: 0;
+    bottom: 19px;
+
+    width: 100%;
+    height: 73px;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+    z-index: 20;
+}
+
+
+.contenido-pie {
+    width: 792px;
+
+    max-width: 90%;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+
+.contenido-pie p {
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 10px;
+}
+
+
+.marca-pie {
+    width: 50px;
+
+    text-align: center;
+}
+
+
+.logo-pie {
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.ovalo-pie {
+    width: 46px;
+    height: 9px;
+
+    margin-top: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 50%;
+}
+
+
+/* ==========================================================
+   DISCOS MUSICALES
+   ========================================================== */
+
+body.pagina-discos {
+    background-color: #eeeeee;
+
+    color: #333333;
+}
+
+
+/* ==========================================================
+   CABECERA INTERIOR
+   ========================================================== */
+
+.cabecera-interior {
+    width: 100%;
+
+    height: 78px;
+
+    background-color: rgba(20, 20, 20, 0.94);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.navegacion-interior {
+    width: 100%;
+
+    max-width: 1000px;
+
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==========================================================
+   LOGO INTERIOR
+   ========================================================== */
+
+.logo-circular-interior {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+}
+
+
+/* ==========================================================
+   MENÚ INTERIOR
+   ========================================================== */
+
+.menu-interior {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    white-space: nowrap;
+}
+
+
+.menu-interior a {
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: opacity 0.25s ease;
+}
+
+
+.menu-interior a:hover {
+    opacity: 0.65;
+}
+
+
+.menu-interior a.activo {
+    color: #e9d987;
+}
+
+
+.separador-interior {
+    width: 1px;
+    height: 28px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ==========================================================
+   CONTENIDO DISCOS
+   ========================================================== */
+
+.contenido-discos {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        65px
+        40px
+        100px;
+}
+
+
+/* ==========================================================
+   TÍTULO DE SECCIÓN
+   ========================================================== */
+
+.titulo-seccion {
+    margin-bottom: 65px;
+
+    text-align: center;
+}
+
+
+.titulo-seccion h1 {
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+}
+
+
+.linea-titulo {
+    width: 120px;
+    height: 1px;
+
+    margin:
+        22px
+        auto
+        0;
+
+    background-color: #777777;
+}
+
+
+/* ==========================================================
+   PROYECTOS MUSICALES
+   ========================================================== */
+
+.proyecto-musical {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+.texto-proyecto h2 {
+    margin-bottom: 25px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 400;
+}
+
+
+.texto-proyecto p {
+    margin-bottom: 18px;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+/* ==========================================================
+   IMÁGENES TEMPORALES
+   ========================================================== */
+
+.imagen-proyecto {
+    width: 100%;
+
+    min-height: 330px;
+}
+
+
+.imagen-vacia {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #bbbbbb;
+
+    background-color: #dddddd;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   SEPARACIÓN
+   ========================================================== */
+
+.separacion-proyectos {
+    width: 100%;
+
+    height: 1px;
+
+    margin:
+        80px
+        0;
+
+    background-color: #cccccc;
+}
+
+
+/* ==========================================================
+   PIE INTERIOR
+   ========================================================== */
+
+.pie-interior {
+    width: 100%;
+
+    height: 90px;
+
+    background-color: #252525;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.contenido-pie-interior {
+    width: 792px;
+
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+
+.contenido-pie-interior p {
+    color: #dddddd;
+
+    font-size: 10px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+    .logo-circular {
+        margin-right: 28px;
+    }
+
+
+    .separador {
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+
+    .menu-inicio a {
+        font-size: 10px;
+    }
+
+
+    .bloque-central h1 {
+        font-size: 61px;
+    }
+
+
+    .logo-circular-interior {
+        margin-right: 25px;
+    }
+
+
+    .separador-interior {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .menu-interior a {
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .proyecto-musical {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .proyecto-invertido .imagen-proyecto {
+        order: 2;
+    }
+
+
+    .proyecto-invertido .texto-proyecto {
+        order: 1;
+    }
+
+
+    .contenido-discos {
+        padding:
+            45px
+            25px
+            70px;
+    }
+
+
+    .titulo-seccion h1 {
+        font-size: 38px;
+    }
+
+
+    .texto-proyecto h2 {
+        font-size: 30px;
+    }
+
+
+    .navegacion-interior {
+        flex-direction: column;
+
+        padding:
+            12px
+            10px;
+    }
+
+
+    .cabecera-interior {
+        height: auto;
+
+        min-height: 120px;
+    }
+
+
+    .logo-circular-interior {
+        margin-right: 0;
+
+        margin-bottom: 10px;
+    }
+
+
+    .menu-interior {
+        flex-wrap: wrap;
+
+        gap:
+            8px
+            12px;
+    }
+
+
+    .separador-interior {
+        display: none;
+    }
+
+}
+/* ==========================================================
+   INICIO - ADAPTACIÓN PARA TELÉFONOS
+   ========================================================== */
+
+@media (max-width: 750px) {
+
+    .cabecera-inicio {
+        top: 20px;
+
+        height: auto;
+        min-height: 120px;
+
+        padding:
+            10px
+            0;
+    }
+
+
+    .navegacion-inicio {
+        height: auto;
+
+        flex-direction: column;
+
+        padding:
+            0
+            10px;
+    }
+
+
+    .logo-circular {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+
+    .menu-inicio {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        white-space: normal;
+
+        gap:
+            8px
+            13px;
+    }
+
+
+    .menu-inicio a {
+        font-size: 10px;
+    }
+
+
+    .separador {
+        display: none;
+    }
+
+
+    .bloque-central {
+        top: 190px;
+
+        width: calc(100% - 40px);
+
+        max-width: 660px;
+    }
+
+
+    .bloque-central h1 {
+        font-size: clamp(
+            40px,
+            12vw,
+            52px
+        );
+    }
+
+
+    .frase-portada {
+        font-size: 13px;
+
+        line-height: 1.35;
+    }
+
+
+    .pie-inicio {
+        bottom: 10px;
+
+        height: 64px;
+    }
+
+
+    .contenido-pie {
+        width: calc(100% - 30px);
+
+        max-width: 792px;
+    }
+
+}

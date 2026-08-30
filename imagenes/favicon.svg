@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <circle cx="256" cy="256" r="238" fill="#1f1f1f"/>
+  <circle cx="256" cy="256" r="224" fill="none" stroke="#e9d987" stroke-width="8"/>
+  <text
+    x="256"
+    y="288"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="170"
+    font-weight="400"
+    letter-spacing="4"
+    fill="#e9d987"
+  >AL</text>
+</svg>

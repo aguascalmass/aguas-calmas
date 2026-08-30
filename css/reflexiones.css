@@ -1,0 +1,628 @@
+/* ==========================================================
+   AGUAS CALMAS
+   REFLEXIONES
+
+   Este archivo afecta solamente a reflexiones.html
+   ========================================================== */
+
+
+/* ==========================================================
+   CUERPO
+   ========================================================== */
+
+body.pagina-reflexiones {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    background-color: transparent;
+
+}
+
+
+/* ==========================================================
+   VIDEO DE FONDO
+   ========================================================== */
+
+.fondo-video-reflexiones {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+.fondo-video-reflexiones video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   VELO
+   ========================================================== */
+
+.velo-reflexiones {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   CABECERA
+   MISMA ESCALA QUE TODO EL SITIO
+   ========================================================== */
+
+.pagina-reflexiones .cabecera-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(10, 10, 10, 0.63);
+
+}
+
+
+/* ==========================================================
+   NAVEGACIÓN
+   ========================================================== */
+
+.pagina-reflexiones .navegacion-interior {
+
+    width: 100%;
+
+    max-width: none;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.pagina-reflexiones .logo-circular-interior {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    margin-right: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.90);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+/* ==========================================================
+   MENÚ
+   ========================================================== */
+
+.pagina-reflexiones .menu-interior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    white-space: nowrap;
+
+}
+
+
+.pagina-reflexiones .menu-interior a {
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.pagina-reflexiones .menu-interior a:hover {
+
+    opacity: 0.70;
+
+}
+
+
+.pagina-reflexiones .menu-interior a.activo {
+
+    color: #e9d987;
+
+}
+
+
+/* ==========================================================
+   SEPARADORES
+   ========================================================== */
+
+.pagina-reflexiones .separador-interior {
+
+    display: block;
+
+    width: 1px;
+
+    height: 29px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================== */
+
+.contenido-reflexiones {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin:
+        45px
+        auto
+        55px;
+
+    padding:
+        65px
+        55px
+        90px;
+
+    background-color: rgba(238, 238, 238, 0.91);
+
+    color: #333333;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO DE REFLEXIONES
+   ========================================================== */
+
+.titulo-reflexiones {
+
+    margin-bottom: 65px;
+
+    text-align: center;
+
+}
+
+
+.titulo-reflexiones h1 {
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+}
+
+
+.linea-reflexiones {
+
+    width: 120px;
+
+    height: 1px;
+
+    margin:
+        22px
+        auto
+        28px;
+
+    background-color: #777777;
+
+}
+
+
+.introduccion-reflexiones {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   LISTA DE ARTÍCULOS
+   ========================================================== */
+
+.lista-reflexiones {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 32px;
+
+}
+
+
+/* ==========================================================
+   TARJETAS
+   ========================================================== */
+
+.tarjeta-reflexion {
+
+    min-height: 300px;
+
+    padding:
+        38px
+        35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.72);
+
+    border:
+        1px
+        solid
+        rgba(120, 120, 120, 0.25);
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+/* EFECTO SUAVE */
+
+.tarjeta-reflexion:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.14);
+
+}
+
+
+/* ==========================================================
+   CATEGORÍA
+   ========================================================== */
+
+.categoria-reflexion {
+
+    margin-bottom: 22px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ==========================================================
+   TÍTULO DEL ARTÍCULO
+   ========================================================== */
+
+.tarjeta-reflexion h2 {
+
+    margin-bottom: 22px;
+
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+
+}
+
+
+/* ==========================================================
+   TEXTO DEL ARTÍCULO
+   ========================================================== */
+
+.tarjeta-reflexion p {
+
+    margin-bottom: 30px;
+
+    color: #555555;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   PARTE INFERIOR DE TARJETA
+   ========================================================== */
+
+.pie-tarjeta {
+
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top:
+        1px
+        solid
+        rgba(120, 120, 120, 0.25);
+
+}
+
+
+.pie-tarjeta span {
+
+    color: #888888;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    font-style: italic;
+
+}
+
+
+/* ==========================================================
+   PIE DEL SITIO
+   ========================================================== */
+
+.pagina-reflexiones .pie-interior {
+
+    position: relative;
+
+    z-index: 10;
+
+    background-color: rgba(20, 20, 20, 0.78);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 950px) {
+
+
+    .pagina-reflexiones .logo-circular-interior {
+
+        margin-right: 28px;
+
+    }
+
+
+    .pagina-reflexiones .separador-interior {
+
+        margin-left: 11px;
+
+        margin-right: 11px;
+
+    }
+
+
+    .pagina-reflexiones .menu-interior a {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+
+    .pagina-reflexiones .cabecera-interior {
+
+        height: auto;
+
+        min-height: 110px;
+
+        padding-top: 10px;
+
+        padding-bottom: 10px;
+
+    }
+
+
+    .pagina-reflexiones .navegacion-interior {
+
+        height: auto;
+
+        flex-direction: column;
+
+    }
+
+
+    .pagina-reflexiones .logo-circular-interior {
+
+        margin-right: 0;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .pagina-reflexiones .menu-interior {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        height: auto;
+
+        gap: 8px 13px;
+
+    }
+
+
+    .pagina-reflexiones .separador-interior {
+
+        display: none;
+
+    }
+
+
+    .contenido-reflexiones {
+
+        width: 92%;
+
+        padding:
+            45px
+            25px
+            65px;
+
+    }
+
+
+    .titulo-reflexiones h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .lista-reflexiones {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tarjeta-reflexion h2 {
+
+        font-size: 25px;
+
+    }
+
+}
